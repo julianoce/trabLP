@@ -1,8 +1,10 @@
 #lang racket
+(require graph)
+;(printf "Escreva seu grafo aqui: (vertice,aresta,vertice)\n")
+;(define a(read))
 
-(printf "Escreva seu grafo aqui: (vertice,aresta,vertice)\n")
-(define a(read))
-(printf"Seu grafo eh:~a\n" a)
+; A gente definiu 1 como alfa e 2 como beta.
+(define z (weighted-graph/directed '((1 a b) (2 c d))))
 (printf "Escreva sua PDL aqui:\n")
 (define b(read))
 (printf"Sua pdl eh:~a\n" b)
